@@ -12,7 +12,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Stylesheets -->
+
 
 
   <!--[if lt IE 9]>
@@ -32,15 +32,16 @@
     <div class="container-fluid">
       <!-- logo -->
       <div class="site-logo">
-        <img alt="logo">
+        <%= image_tag ("img/logo.png"), class: "img"%>
+        <img src="img/logo.png" alt="logo">
       </div>
       <!-- responsive -->
       <div class="nav-switch">
         <i class="fa fa-bars"></i>
       </div>
       <div class="header-right">
-        <a href="cart.html" class="card-bag"><img alt=""><span>2</span></a>
-        <a href="#" class="search"><img  alt=""></a>
+        <a href="cart.html" class="card-bag"><%= image_tag ("img/icons/bag.png"), class: "img"%><span>2</span></a>
+        <a href="#" class="search"><%= image_tag ("img/icons/search.png"), class: "img"%>
       </div>
       <!-- site menu -->
       <ul class="main-menu">
@@ -57,10 +58,12 @@
 
 
   <!-- Hero section -->
-  <section class="hero-section set-bg" >
+
+
+  <section class="hero-section set-bg" data-setbg="img/bg.jpg" style="background-color: #b36ec5">
     <div class="hero-slider owl-carousel">
       <div class="hs-item">
-        <div class="hs-left"><img  alt=""></div>
+        <div class="hs-left"><%= image_tag ("img/slider-img.png"), class: "img"%><
         <div class="hs-right">
           <div class="hs-content">
             <div class="price">from $19.90</div>
@@ -70,7 +73,7 @@
         </div>
       </div>
       <div class="hs-item">
-        <div class="hs-left"><img alt=""></div>
+        <div class="hs-left"><%= image_tag ("img/slider-img.png"), class: "img"%></div>
         <div class="hs-right">
           <div class="hs-content">
             <div class="price">from $19.90</div>
@@ -95,7 +98,9 @@
         <li>
           <div class="intro-item">
             <figure>
-              <img  alt="#">
+
+              <%= image_tag ("img/intro/1.jpg"), class: "img"%>
+
             </figure>
             <div class="product-info">
               <h5>Pink Sunglasses</h5>
@@ -107,7 +112,7 @@
         <li>
           <div class="intro-item">
             <figure>
-              <img  alt="#">
+                 <%= image_tag ("img/intro/2.jpg"), class: "img"%>
             </figure>
             <div class="product-info">
               <h5>Black Nighty</h5>
@@ -119,7 +124,7 @@
         <li>
           <div class="intro-item">
             <figure>
-              <img  alt="#">
+                 <%= image_tag ("img/intro/3.jpg"), class: "img"%>
               <div class="bache">NEW</div>
             </figure>
             <div class="product-info">
@@ -132,7 +137,7 @@
         <li>
           <div class="intro-item">
             <figure>
-              <img alt="#">
+                 <%= image_tag ("img/intro/4.jpg"), class: "img"%>
             </figure>
             <div class="product-info">
               <h5>Yellow Sunglasses</h5>
@@ -144,7 +149,7 @@
         <li>
           <div class="intro-item">
             <figure>
-              <img alt="#">
+                 <%= image_tag ("img/intro/5.jpg"), class: "img"%>
             </figure>
             <div class="product-info">
               <h5>Black Sholder bag</h5>
@@ -172,13 +177,13 @@
       <div class="row">
         <div class="col-md-6">
           <div class="featured-item">
-            <img  alt="">
+            <%= image_tag "featured-1.jpg", class: "img"%>
             <a href="#" class="site-btn">see more</a>
           </div>
         </div>
         <div class="col-md-6">
           <div class="featured-item mb-0">
-            <img  alt="">
+             <%= image_tag "featured-2.jpg", class: "img"%>
             <a href="#" class="site-btn">see more</a>
           </div>
         </div>
@@ -200,14 +205,14 @@
         <div class="mix col-lg-3 col-md-6 best">
           <div class="product-item">
             <figure>
-              <img  alt="">
+              <%= image_tag "1.jpg", class: "img"%>
               <div class="pi-meta">
                 <div class="pi-m-left">
-                  <img  alt="">
+                  <img src="img/icons/eye.png" alt="">
                   <p>quick view</p>
                 </div>
                 <div class="pi-m-right">
-                  <img  alt="">
+                  <img src="img/icons/heart.png" alt="">
                   <p>save</p>
                 </div>
               </div>
@@ -222,15 +227,15 @@
         <div class="mix col-lg-3 col-md-6 new">
           <div class="product-item">
             <figure>
-              <img alt="">
+              <%= image_tag "2.jpg", class: "img"%>
               <div class="bache">NEW</div>
               <div class="pi-meta">
                 <div class="pi-m-left">
-                  <img  alt="">
+                  <img src="img/icons/eye.png" alt="">
                   <p>quick view</p>
                 </div>
                 <div class="pi-m-right">
-                  <img  alt="">
+                  <img src="img/icons/heart.png" alt="">
                   <p>save</p>
                 </div>
               </div>
@@ -245,14 +250,14 @@
         <div class="mix col-lg-3 col-md-6 best">
           <div class="product-item">
             <figure>
-              <img  alt="">
+              <%= image_tag "3.jpg", class: "img"%>
               <div class="pi-meta">
                 <div class="pi-m-left">
-                  <img  alt="">
+                  <img src="img/icons/eye.png" alt="">
                   <p>quick view</p>
                 </div>
                 <div class="pi-m-right">
-                  <img  alt="">
+                  <img src="img/icons/heart.png" alt="">
                   <p>save</p>
                 </div>
               </div>
@@ -267,15 +272,15 @@
         <div class="mix col-lg-3 col-md-6 new best">
           <div class="product-item">
             <figure>
-              <img alt="">
+              <%= image_tag "4.jpg", class: "img"%>
               <div class="bache sale">SALE</div>
               <div class="pi-meta">
                 <div class="pi-m-left">
-                  <img  alt="">
+                  <img src="img/icons/eye.png" alt="">
                   <p>quick view</p>
                 </div>
                 <div class="pi-m-right">
-                  <img  alt="">
+                  <img src="img/icons/heart.png" alt="">
                   <p>save</p>
                 </div>
               </div>
@@ -290,14 +295,14 @@
         <div class="mix col-lg-3 col-md-6 best">
           <div class="product-item">
             <figure>
-              <img alt="">
+              <%= image_tag "5.jpg", class: "img"%>
               <div class="pi-meta">
                 <div class="pi-m-left">
-                  <img alt="">
+                  <img src="img/icons/eye.png" alt="">
                   <p>quick view</p>
                 </div>
                 <div class="pi-m-right">
-                  <img  alt="">
+                  <img src="img/icons/heart.png" alt="">
                   <p>save</p>
                 </div>
               </div>
@@ -312,15 +317,15 @@
         <div class="mix col-lg-3 col-md-6 new">
           <div class="product-item">
             <figure>
-              <img alt="">
+              <%= image_tag "6.jpg", class: "img"%>
               <div class="bache">NEW</div>
               <div class="pi-meta">
                 <div class="pi-m-left">
-                  <img  alt="">
+                  <img src="img/icons/eye.png" alt="">
                   <p>quick view</p>
                 </div>
                 <div class="pi-m-right">
-                  <img  alt="">
+                  <img src="img/icons/heart.png" alt="">
                   <p>save</p>
                 </div>
               </div>
@@ -335,14 +340,14 @@
         <div class="mix col-lg-3 col-md-6 best">
           <div class="product-item">
             <figure>
-              <img alt="">
+              <%= image_tag "7.jpg", class: "img"%>
               <div class="pi-meta">
                 <div class="pi-m-left">
-                  <img  alt="">
+                  <img src="img/icons/eye.png" alt="">
                   <p>quick view</p>
                 </div>
                 <div class="pi-m-right">
-                  <img alt="">
+                  <img src="img/icons/heart.png" alt="">
                   <p>save</p>
                 </div>
               </div>
@@ -354,17 +359,22 @@
             </div>
           </div>
         </div>
+
+
+
+
+
         <div class="mix col-lg-3 col-md-6 best">
           <div class="product-item">
             <figure>
-              <img alt="">
+              <%= image_tag "8.jpg", class: "img"%>
               <div class="pi-meta">
                 <div class="pi-m-left">
-                  <img alt="">
+                  <img src="img/icons/eye.png" alt="">
                   <p>quick view</p>
                 </div>
                 <div class="pi-m-right">
-                  <img  alt="">
+                  <img src="img/icons/heart.png" alt="">
                   <p>save</p>
                 </div>
               </div>
@@ -388,7 +398,7 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="featured-item">
-            <img  alt="">
+            <%= image_tag "featured-3.jpg", class: "img"%>
             <a href="#" class="site-btn">see more</a>
           </div>
         </div>
@@ -396,7 +406,7 @@
           <h4 class="bgs-title">from the blog</h4>
           <div class="blog-item">
             <div class="bi-thumb">
-              <img  alt="">
+              <img src="img/blog-thumb/1.jpg" alt="">
             </div>
             <div class="bi-content">
               <h5>10 tips to dress like a queen</h5>
@@ -406,7 +416,7 @@
           </div>
           <div class="blog-item">
             <div class="bi-thumb">
-              <img  alt="">
+              <img src="img/blog-thumb/2.jpg" alt="">
             </div>
             <div class="bi-content">
               <h5>Fashion Outlet products</h5>
@@ -416,7 +426,7 @@
           </div>
           <div class="blog-item">
             <div class="bi-thumb">
-              <img alt="">
+              <img src="img/blog-thumb/3.jpg" alt="">
             </div>
             <div class="bi-content">
               <h5>the little black dress just for you</h5>
@@ -437,10 +447,14 @@
       <div class="row">
         <div class="col-lg-3 col-md-8 col-sm-12">
           <div class="footer-widget about-widget">
-            <img class="footer-logo" alt="">
+            <img src="img/logo.png" class="footer-logo" alt="">
             <p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam fringilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem.</p>
             <div class="cards">
-
+              <img src="img/cards/5.png" alt="">
+              <img src="img/cards/4.png" alt="">
+              <img src="img/cards/3.png" alt="">
+              <img src="img/cards/2.png" alt="">
+              <img src="img/cards/1.png" alt="">
             </div>
           </div>
         </div>
@@ -495,7 +509,6 @@
       </div>
     </div>
   </section>
-  </section>
   <!-- Footer top section end -->
 
     <!-- Footer section -->
@@ -509,6 +522,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </div>
   </footer>
   <!-- Footer section end -->
+
 
 
     </body>
