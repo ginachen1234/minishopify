@@ -11,3 +11,86 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+/*navbar*/
+.navbar{
+  position:relative;
+  padding: 1rem 4rem;
+  background-color: rgba(0,0,0,0);
+}
+  .navbar:after{
+    content: "";
+    display: table;
+    clear:both;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: #000;
+  }
+.navbar a:hover{
+    color: #ff4a1f;
+  }
+
+.logo{
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  font-size:30px;
+  font-weight: bold;
+}
+
+.menu{
+  float:right;
+}
+  .menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li{
+    list-style: none;
+    position: relative;
+  }
+/*frist lavel*/
+.menu > ul > li{
+  text-decoration:none;
+  display: inline-block;
+}
+  .menu > ul > li > a{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+  }
+/*2nd lavel*/
+.menu li ul{
+  list-style: none;
+  visibility: collapse;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width:15rem;
+  padding: 1.5rem 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+}
+  .menu li:hover > ul{
+    list-style: none;
+    visibility: visible;
+  }
+  .menu li ul a{
+    list-style: none;
+    display: block;
+    padding:.5rem 1rem;
+  }
+
+.menu li ul li ul{
+  list-style: none;
+  left: 100%;
+  top: -1.5rem;
+}
+
