@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   def show
 
+    @user = User.new
+
 
 
 
