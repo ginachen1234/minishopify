@@ -14,7 +14,7 @@
           <ul>
             <li>
               <a href="#">Spring Look <i class="fa fa-caret-right" aria-hidden="true"></i>
-</a>
+  </a>
                 <ul>
                   <li><a href="#">Sales Items</a></li>
                   <li><a href="#">Clearup Items</a></li>
@@ -47,22 +47,18 @@
               <ul>
                 <li><a href="#">Lookbook</a></li>
                 <li><a href="#">Post-Processing</a></li>
-                <li><a href="#">Photo Critique</a></li>
-                <li><a href="#">How-To</a></li>
-                <li><a href="#">Lighting</a></li>
               </ul>
             </li>
           </ul>
       </li>
+
       <li>
         <a href="#">Men<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
         <ul>
           <li><a href="#">Design & Illustration</a></li>
           <li><a href="#">Code</a></li>
           <li><a href="#">Web Design</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Photo & Video</a></li>
+
         </ul>
       </li>
       <li>
@@ -71,54 +67,41 @@
           <li><a href="#">Design & Illustration</a></li>
           <li><a href="#">Code</a></li>
           <li><a href="#">Web Design</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Photo & Video</a></li>
         </ul>
       </li>
+
       <li><a href="#">Contact</a></li>
     </ul>
-     <%= link_to "Home", root_path %>
-      <%= link_to "Sign in", new_user_registration_path %>
-
 
   </nav>
 
+<div class="dropdown">
+        <button class="dropbtn">My Links</button>
+        <div class="dropdown-content">
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Children</a>
+        </div>
+    </div>
 
   <img style = "float: right; size: 35px; margin-left: 550px;"class="avatar-large" alt="avatar-large" src="https://cdn3.iconfinder.com/data/icons/fillies-small/64/id-card-512.png" />
-
-
 
 </header>
   <!-- navbar end-->
 
 
+  <div class="banner" style="margin-top: -10%;"><%= image_tag ("bg-1.jpg"), class: "img"%>
+  <div class="container" style="margin-top: -10%;">
+    <h1>View collection</strong>!</h1>
 
-  <section class="hero-section set-bg"  style="background-color: grey;">
-    <div class="hero-slider owl-carousel">
-      <div class="hs-item">
-        <div class="hs-left"><%= image_tag ("img/slider-img.png"), class: "img"%><
-        <div class="hs-right">
-          <div class="hs-content">
-            <div class="price">from $19.90</div>
-            <h2><span>2018</span> <br>summer collection</h2>
-            <a href="" class="site-btn">Shop NOW!</a>
-          </div>
-        </div>
-      </div>
-      <div class="hs-item">
-        <div class="hs-left"><%= image_tag ("img/slider-img.png"), class: "img"%></div>
-        <div class="hs-right">
-          <div class="hs-content">
-            <div class="price">from $19.90</div>
-            <h2><span>2018</span> <br>summer collection</h2>
-            <a href="" class="site-btn">Shop NOW!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Hero section end -->
+    <a class="btn btn-flat" href="#">Start now</a>
+  </div>
+</div>
+
+
+
+
+
 
 
   <!-- Intro section -->
