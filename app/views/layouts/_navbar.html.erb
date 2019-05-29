@@ -1,0 +1,28 @@
+ <header class="navbar">
+
+  <nav class="menu">
+    <ul>
+      <li>
+        <a href="#"> Products <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+          <ul>
+            <li>
+              <%= link_to "Create a product",new_product_path %>
+             </li>
+            </li>
+            </li>
+            <li>
+              <%= link_to "View all the products", products_path%></i>
+            </li>
+          </ul>
+      </li>
+      <li>
+        <a href="#">Profile <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+        <ul>
+          <%= link_to "My dashboard", profile_path %>
+          <%= link_to "My activity", profile_path %>
+        </ul>
+      </li>
+      <li><a href="#">Contact </a></li>
+    </ul>
+  </nav>
+</header>

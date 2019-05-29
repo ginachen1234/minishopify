@@ -10,7 +10,7 @@
 
 // Your CSS partials
 @import "components/index";
-@import "pages/index";
+@import "pages/users/index";
 
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
@@ -74,7 +74,7 @@
   left: 0;
   width:15rem;
   padding: 1.5rem 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgb(254, 254, 254);
   border-radius: 5px;
 
 }
@@ -114,6 +114,16 @@
   text-align: center;
   border-radius: 5px 0 0 5px;
 }
+.signup_create_product {
+  float: left;
+  width: 300px;
+  padding: 30px 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+
 
 [type=text] {
   display: block;
@@ -220,3 +230,69 @@ p:nth-of-type(2) {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+
+/** {
+  box-sizing: border-box;
+}*/
+
+/* brand */
+#header .navbar .navbar-brand {
+margin: auto;
+padding: 0;
+max-width: 250px;
+max-height: 70px;
+color: #fff;
+text-transform: uppercase;
+text-shadow: none;
+position: absolute;
+top: 50%;
+
+-webkit-transform: translate(0,-50%);
+-ms-transform: translate(0,-50%);
+transform: translate(0,-50%);
+}
+#header .navbar .navbar-brand img{
+  max-height: 100%;
+}
+.navbar .brand:hover, .navbar .navbar-brand:focus {
+text-decoration: none;
+}
+
+
+#header .navbar .nav > li > a {
+position: relative;
+padding-top: 40px;
+padding-bottom: 40px;
+color: rgba(0, 0, 0, .6);
+text-transform: uppercase;
+text-shadow: none;
+font-weight: 600;
+font-size: 14px;
+}
+
+.navbar{
+  background-color:rgba(255, 255, 255, .9);
+
+}
+.nav>li{
+/*   color:#fff; */
+}
+
+.nav >li >a:hover,
+.nav >li >a:focus,
+.nav > li.active > a,
+.nav > li.active > a:hover,
+.nav > .active > a:focus
+{
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, .8)!important;
+  color: #fff;
+  box-shadow: 0 3px 0 rgb(106,168,66);
+}
+
+#header .sticky.navbar .nav > li > a {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
