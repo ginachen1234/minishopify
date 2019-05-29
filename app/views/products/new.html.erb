@@ -4,6 +4,12 @@
 
 <h1>Create a new product</h1>
       <%= simple_form_for @product do |f| %>
+
+       <%= f.input :name,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "name" }%>
+
        <%= f.input :product_name,
                 required: true,
                 autofocus: true,
@@ -14,10 +20,7 @@
                 autofocus: true,
                 input_html: { autocomplete: "description" }%>
 
-    <%= f.input :condition,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "condition" }%>
+
 
          <div class="form-actions">
                 <%= f.button :submit, "Submit" %>
