@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    @products = @user.products
   end
 
   def new
@@ -14,6 +15,7 @@ class ProductsController < ApplicationController
 
 
   def create
+
      @product = Product.new(product_params)
      @product.user = current_user
 

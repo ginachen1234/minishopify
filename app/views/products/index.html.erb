@@ -26,18 +26,33 @@
 <body>
 
 
+
+  <div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
   <div class="row">
   <% @products.each do |product| %>
 
      <div class="column" style="background-color:#aaa;margin:20px;">
-      <h2><%= product.product_name %></h2>
+
+
+      <h2><%= link_to product.product_name , product_path(product) %></h2>
       <p><%= product.description %></p>
+      <p><%= product.condition %></p>
     </div>
-
   <% end %>
+
 </div>
-
-
 </body>
 </html>
 

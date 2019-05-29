@@ -14,6 +14,11 @@
                 autofocus: true,
                 input_html: { autocomplete: "description" }%>
 
+    <%= f.input :condition,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "condition" }%>
+
          <div class="form-actions">
                 <%= f.button :submit, "Submit" %>
               </div>
