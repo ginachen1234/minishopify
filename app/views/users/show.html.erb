@@ -1,12 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-show {
+  float: left;
+  width: 44%;
+  height: 300px;
+  margin-left: 10%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+<body>
+<h1>User products</h1>
+
+<div>
+
+ <div class="row">
+  <% @products.each do |product| %>
+
+     <div class="column-show" style="background-color:#aaa;">
 
 
-<% if @user == current_user %>
+      <tr>
+      <td><%= product.product_name %><td>
+      <td><%= product.description %></td>
+      <td><%= product.condition %></td>
+     <div> <%= link_to 'Delete the product', product_path(@product),  method: :delete, data: { confirm: "Are you sure?" }%></div>
+      <div> <%= link_to 'the product', edit_product_path(@product), method: :get%> </div>
 
+    </tr>
+   <% end %>
+</div>
+</div>
 
-
-<h1><%= @products.each do |product|  %></h1>
- <h1>  <%= products.product_name  %></h1>
-      <p><%= products.description %> <%= products.condition %></p>
-
- <% end %>
- <% end %>
+</body>
+</html>
