@@ -5,7 +5,6 @@ Rails.application.routes.draw do
    root to: "products#index"
     get 'profile', to: 'users#show'
      get 'profile/destroy', to: 'users#destroy'
-     delete "products/:id",  to: "products#destroy
 
  end
 

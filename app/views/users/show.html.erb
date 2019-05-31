@@ -39,8 +39,8 @@
       <td><%= product.product_name %><td>
       <td><%= product.description %></td>
       <td><%= product.condition %></td>
-     <div> <%= link_to 'Delete the product', product_path(@product),  method: :delete, data: { confirm: "Are you sure?" }%></div>
-      <div> <%= link_to 'the product', edit_product_path(@product), method: :get%> </div>
+     <div> <%= link_to 'Delete this product', product_path(product), method: :delete %></div>
+      <div> <%= link_to 'the product', edit_product_path(product), method: :get%> </div>
 
     </tr>
    <% end %>
