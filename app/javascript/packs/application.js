@@ -1,112 +1,22 @@
-// import "bootstrap";
-// /* =================================
-// ------------------------------------
-//   The Plaza - eCommerce Template
-//   Version: 1.0
-//  ------------------------------------
-//  ====================================*/
+$(document).ready(function(){
 
+$('#itemslider').carousel({ interval: 3000 });
 
-// 'use strict';
+$('.carousel-showmanymoveone .item').each(function(){
+var itemToClone = $(this);
 
+for (var i=1;i<6;i++) {
+itemToClone = itemToClone.next();
 
-// $(window).on('load', function() {
-//   /*------------------
-//     Preloder
-//   --------------------*/
-//   $(".loader").fadeOut();
-//   $("#preloder").delay(400).fadeOut("slow");
+if (!itemToClone.length) {
+itemToClone = $(this).siblings(':first');
+}
 
+itemToClone.children(':first-child').clone()
+.addClass("cloneditem-"+(i))
+.appendTo($(this));
+}
+});
+});
 
-//   /*------------------
-//     Product filter
-//   --------------------*/
-//   if($('#product-filter').length > 0 ) {
-//     var containerEl = document.querySelector('#product-filter');
-//     var mixer = mixitup(containerEl);
-//   }
-
-// });
-
-// (function($) {
-//   /*------------------
-//     Navigation
-//   --------------------*/
-//   $('.nav-switch').on('click', function(event) {
-//     $('.main-menu').slideToggle(400);
-//     event.preventDefault();
-//   });
-
-
-//   /*------------------
-//     Background Set
-//   --------------------*/
-//   $('.set-bg').each(function() {
-//     var bg = $(this).data('setbg');
-//     $(this).css('background-image', 'url(' + bg + ')');
-//   });
-
-
-//   /*------------------
-//     Hero Slider
-//   --------------------*/
-//   $('.hero-slider').owlCarousel({
-//     loop: true,
-//     nav: true,
-//     navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-//     dots: true,
-//     mouseDrag: false,
-//     animateOut: 'fadeOut',
-//     animateIn: 'fadeIn',
-//     items: 1,
-//     autoplay: true
-//   });
-
-
-//   /*------------------
-//     Intro Slider
-//   --------------------*/
-//   if($('.intro-slider').length > 0 ) {
-//     var $scrollbar = $('.scrollbar');
-//     var $frame = $('.intro-slider');
-//     var sly = new Sly($frame, {
-//       horizontal: 1,
-//       itemNav: 'forceCentered',
-//       activateMiddle: 1,
-//       smart: 1,
-//       activateOn: 'click',
-//       //mouseDragging: 1,
-//       touchDragging: 1,
-//       releaseSwing: 1,
-//       startAt: 10,
-//       scrollBar: $scrollbar,
-//       //scrollBy: 1,
-//       activatePageOn: 'click',
-//       speed: 200,
-//       moveBy: 600,
-//       elasticBounds: 1,
-//       dragHandle: 1,
-//       dynamicHandle: 1,
-//       clickBar: 1,
-//     }).init();
-//   }
-
-
-
-//   /*------------------
-//     ScrollBar
-//   --------------------*/
-//   $(".cart-table, .product-thumbs").niceScroll({
-//     cursorborder:"",
-//     cursorcolor:"#afafaf",
-//     boxzoom:false
-//   });
-
-
-
-
-// /**
-//  * Owl Carousel v2.2.1
-//  * Copyright 2013-2017 David Deutsch
-//  * Licensed under  ()
 
